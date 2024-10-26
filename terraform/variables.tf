@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "aws_profile" {
   description = "AWS profile"
-  default     = "default"   
+  default     = "default"
 }
 
 variable "aws_instance_type" {
@@ -15,6 +15,11 @@ variable "aws_instance_type" {
 }
 
 variable "ami" {
-    description = "AMI ID"
-    default     = "ami-0c55b159cbfafe1f0"
+  description = "AMI ID"
+  default     = "ami-0c55b159cbfafe1f0"
+}
+
+variable "aws_token" {
+  description = "AWS token"
+  default     = ""
 }

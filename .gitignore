@@ -1,0 +1,6 @@
+# gitignore file
+node_modules
+dist
+
+# cle ssh
+/key
