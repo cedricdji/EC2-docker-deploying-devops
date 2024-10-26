@@ -4,3 +4,11 @@ dist
 
 # cle ssh
 /key
+
+# state file
+terraform/.terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/terraform.tfvars
+terraform/terraform.tfvars.json
+terraform/.terraform*

@@ -16,10 +16,20 @@ variable "aws_instance_type" {
 
 variable "ami" {
   description = "AMI ID"
-  default     = "ami-0c55b159cbfafe1f0"
+  default     = "ami-0c02fb55956c7d316"
 }
 
 variable "aws_token" {
   description = "AWS token"
+  default     = ""
+}
+# ip de l"instance
+variable "aws_public_ip" {
+  description = "ip"
+  default     = ""
+}
+
+variable "key_name" {
+  description = "key name"
   default     = ""
 }
