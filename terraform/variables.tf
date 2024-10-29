@@ -33,3 +33,7 @@ variable "key_name" {
   description = "key name"
   default     = ""
 }
+
+variable "path_key" {
+  description = "path key"
+}
