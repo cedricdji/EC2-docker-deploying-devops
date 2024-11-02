@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
 }
 
 # clé ssh
@@ -24,7 +24,7 @@ resource "aws_key_pair" "key" {
 resource "aws_instance" "docker_host" {
   ami           = var.ami
   instance_type = var.aws_instance_type
-  key_name      = aws_key_pair.key.key_name
+  key_name = aws_key_pair.key.key_name
   tags = {
     Name = "docker_host"
   }

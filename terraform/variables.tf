@@ -23,6 +23,7 @@ variable "aws_token" {
   description = "AWS token"
   default     = ""
 }
+
 # ip de l"instance
 variable "aws_public_ip" {
   description = "ip"
@@ -31,9 +32,10 @@ variable "aws_public_ip" {
 
 variable "key_name" {
   description = "key name"
-  default     = ""
+  default     = "~/.ssh/id_rsa.pub"
 }
 
 variable "path_key" {
   description = "path key"
+  default     = ""
 }
